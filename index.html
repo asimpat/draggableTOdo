@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="modal hidden" id="todoform">
+        <div class="header">
+            <div class="title">Add Todo</div>
+            <button class="closebtn">&times;</button>
+        </div>
+
+        <div class="body">
+            <input type="text " id="todoinput" />
+            <input type="submit" id="todosubmit" value="Add Todo" />
+        </div>
+    </div>
+    <div class="container">
+        <div class="status" id="nostatus">
+            <h2>No Status</h2>
+            <button id="addbtn" data-target="'#todoform">+ Add Todo</button>
+            <div class="todo" draggable="true">
+                Buy a Pizza
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="status">
+            <h2>Not Started</h2>
+        </div>
+        <div class="status">
+            <h2>Still in Progress</h2>
+        </div>
+        <div class="status">
+            <h2>Completed</h2>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
